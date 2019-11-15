@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+/**
+ * Created by PhpStorm.
+ * User: david.ramentol@gmail.com
+ * Date: 15/11/2019
+ * Time: 10:47
+ */
+
+use App\Command\SimulatorCommand;
+use Symfony\Component\Console\Application;
+
+require dirname(__DIR__).'/vendor/autoload.php';
+
+$application = new Application();
+
+$application->add(new SimulatorCommand());
+
+$application->run();

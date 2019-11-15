@@ -1,0 +1,25 @@
+sequences:
+
+  - interval: 5
+    start: 9:00
+    end: 11:00
+    calls: [0]
+    destinations: [2]
+
+  - interval: 10
+    start: 9:00
+    end: 10:00
+    calls: [0]
+    destinations: [1]
+
+  - interval: 20
+    start: 11:00
+    end: 18:20
+    calls: [0]
+    destinations: [1, 2, 3]
+
+  - interval: 4
+    start: 14:00
+    end: 15:00
+    calls: [1, 2, 3]
+    destinations: [0]
